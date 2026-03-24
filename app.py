@@ -11,7 +11,7 @@ def get_time():
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 def get_message():
-    return os.getenv("Build_message", "First deployment 🚀")
+    return os.getenv("Build__message", "First deployment 🚀")
 
 @app.route("/")
 def home():
